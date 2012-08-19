@@ -125,7 +125,8 @@ object PhotoCollage {
      * Average the brightness of the number of evaluated pixels with the aggregate of
      * their calculated values.
      */
-    estimateBrightness(startx, starty, stopx, stopy, 0) / ((stopx - startx) * (stopy - starty))
+    val aggregatedBrightness = estimateBrightness(startx, starty, stopx, stopy, 0) 
+    aggregatedBrightness / ((stopx - startx) * (stopy - starty))
   }  
   
   /**
